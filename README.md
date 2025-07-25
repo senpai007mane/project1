@@ -26,7 +26,7 @@ print(df.isnull().sum())
 print("\nClass distribution:")
 print(df['Outcome'].value_counts())
 
-# Handle zero values (assuming they represent missing data)
+
 zero_cols = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
 df[zero_cols] = df[zero_cols].replace(0, np.nan)
 
